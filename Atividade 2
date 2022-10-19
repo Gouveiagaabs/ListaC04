@@ -1,0 +1,5 @@
+valores = [0,0,0,0,0,0]
+for indice in range(6):
+    num = int(input("Digite um valor inteiro: "))
+    valores[indice] = num
+print(valores)
