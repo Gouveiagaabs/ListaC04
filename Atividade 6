@@ -1,0 +1,7 @@
+valores = [0]*10
+for indice in range(10):
+    num = int(input("Digite um valor inteiro: "))
+    valores[indice] = num
+maior = max(valores)
+menor = min(valores)
+print("O maior valor é " + str(maior) + " e o menor é " + str(menor))
