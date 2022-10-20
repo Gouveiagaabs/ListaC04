@@ -1,0 +1,25 @@
+valores = [0]*8
+for indice in range(8):
+    num = float(input("Digite um valor: "))
+    valores[indice] = num
+print(valores)
+contador = 0
+xcont = 0
+ycont = 0
+
+while contador == 0:
+    while xcont == 0:
+        x = int(input("Digite um número inteiro entre 0 e 7: "))
+        if x < 0 or x > 7:
+            print("Digite um número válido")
+        else:
+            xcont += 1
+    while ycont == 0:
+        y = int(input("Digite um número inteiro entre 0 e 7: "))
+        if y < 0 or y > 7:
+            print("Digite um número válido")
+        else:
+            ycont += 1
+            print("O valor na posição X é: " + str(valores[x]) + " e o valor na posição y é: " + str(valores[y]))
+            soma = valores[x] + valores[y]
+            print("A soma destes valores é: " + str(soma))
