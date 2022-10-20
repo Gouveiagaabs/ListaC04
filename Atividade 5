@@ -1,0 +1,11 @@
+valores = [0]*10
+for indice in range(10):
+    num = int(input("Digite um valor inteiro: "))
+    valores[indice] = num
+contagem = 0
+pares = []
+for valor in valores:
+    if valor % 2 == 0:
+        pares.append(valor)
+        contagem += 1
+print("Existem " + str(contagem) + " números pares neste vetor, sendo eles: " + str(pares))
